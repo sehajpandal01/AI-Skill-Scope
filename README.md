@@ -19,7 +19,7 @@
 
 ## 📦 Installation
 ```bash
-git clone https://github.com/yourusername/skillscope-ai.git
+git clone https://github.com/sehajpandal01/skillscope-ai.git
 cd skillscope-ai
 docker-compose up --build
 ```
@@ -29,9 +29,6 @@ docker-compose up --build
 - `POST /voice` — Transcribe + respond to voice
 - `POST /file/pdf` — Upload and analyze PDF
 - `POST /file/image` — OCR and respond
-
-## 🎥 Demo
-(Include .gif or video demo here)
 
 ## 📄 License
 MIT
