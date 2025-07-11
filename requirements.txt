@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+langchain
+pydantic
+ollama
+openai-whisper
+PyMuPDF
+pytesseract
+python-multipart
