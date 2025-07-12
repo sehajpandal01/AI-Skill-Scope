@@ -1,11 +1,11 @@
 # SkillScope-AI
 
-**SkillScope-AI** is a local-first modular AI agent capable of understanding voice, image, and PDF input through LangChain, Ollama, Whisper, and FastAPI. This project is designed to showcase clean backend architecture, multi-modal input handling, and agent memory.
+**SkillScope-AI** is a local-first modular AI agent capable of understanding voice, image, and PDF input through LangChain, Ollama, Whisper, and FastAPI. This project is designed to showcase clean backend architecture, multi-modal input handling, summarization, and agent memory.
 
 ## 🚀 Features
 - 🧠 LLM integration (Ollama + LangChain)
 - 🗣️ Voice input via OpenAI Whisper
-- 📄 PDF parsing (PyMuPDF)
+- 📄 PDF parsing and summarization (PyMuPDF + OpenAI)
 - 🖼️ OCR from images (Tesseract)
 - 💬 Session-based memory (LangChain Memory / ChromaDB-ready)
 - 🐳 Dockerized for portability
@@ -13,8 +13,8 @@
 
 ## 🛠️ Tech Stack
 - Python, FastAPI
-- Ollama, LangChain
-- Whisper, pytesseract, PyMuPDF
+- Ollama, LangChain, OpenAI
+- Whisper, PyMuPDF, pytesseract
 - Docker, uvicorn
 
 ## 📦 Installation
@@ -22,13 +22,3 @@
 git clone https://github.com/sehajpandal01/skillscope-ai.git
 cd skillscope-ai
 docker-compose up --build
-```
-
-## 📬 API Endpoints
-- `POST /chat` — LLM interaction
-- `POST /voice` — Transcribe + respond to voice
-- `POST /file/pdf` — Upload and analyze PDF
-- `POST /file/image` — OCR and respond
-
-## 📄 License
-MIT
