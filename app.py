@@ -1,13 +1,14 @@
-from pdf_parser.parser import extract_text_from_pdf
-from pdf_parser.summarizer import summarize_text
+from image_ocr.ocr import extract_text_from_image
+from image_ocr.qna import ask_question_about_text
 import sys
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        print("Usage: python app.py <pdf_path> <openai_api_key>")
+    if len(sys.argv) < 4:
+        print("Usage: python app.py <image_path> <question> <openai_api_key>")
     else:
-        pdf_path = sys.argv[1]
-        api_key = sys.argv[2]
-        text = extract_text_from_pdf(pdf_path)
-        summary = summarize_text(text, api_key)
-        print("\nSummary:\n", summary)
+        image_path = sys.argv[1]
+        question = sys.argv[2]
+        api_key = sys.argv[3]
+        text = extract_text_from_image(image_path)
+        answer = ask_question_about_text(text, question, api_key)
+        print("\nAnswer:\n", answer)
