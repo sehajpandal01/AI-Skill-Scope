@@ -1,3 +1,3 @@
 def generate_response(query: str) -> str:
-    # Placeholder logic for Ollama LLM via LangChain
+    # This is just placeholder logic for the Ollama LLM
     return f"Echo: {query}"
