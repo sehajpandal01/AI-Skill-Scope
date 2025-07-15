@@ -1,3 +1,14 @@
+(*These are all the things needed to continue with making the agent, updated version*)
+torch
+tensorflow
+scikit-learn
+transformers
+openai
+pandas
+requests
+apache-airflow
+kafka-python
+pika
 fastapi
 uvicorn
 langchain
