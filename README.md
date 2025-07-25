@@ -7,7 +7,7 @@ Current Capabilities: Can understand and respond to voice, PDF, and image inputs
 ## 🚀 Features
 - 🧠 LLM integration (Ollama + LangChain)
 - 🗣️ Voice input via OpenAI Whisper
-- 📄 PDF parsing and summarization (PyMuPDF + OpenAI)
+- 📄 PDF parsing and summarization (PyMuPDF and OpenAI)
 - 🖼️ OCR from images (Tesseract)
 - 💬 Session-based memory (LangChain Memory / ChromaDB-ready)
 - 🐳 Dockerized for portability
