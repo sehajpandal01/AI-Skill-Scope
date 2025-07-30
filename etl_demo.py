@@ -1,7 +1,5 @@
-
 import pandas as pd
 import requests
-
 response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 btc_data = response.json()
 
