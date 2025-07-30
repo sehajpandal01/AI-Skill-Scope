@@ -1,5 +1,4 @@
 from openai import OpenAI
-
 def summarize_text(text, api_key):
     client = OpenAI(api_key=api_key)
     prompt = f"Summarize the following text:\n{text}"
