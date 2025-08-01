@@ -3,7 +3,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.datasets import load_iris
 import torch
 import tensorflow as tf
-
 classifier = pipeline("sentiment-analysis")
 print("Transformers result:", classifier("AI is revolutionizing the world!"))
 
