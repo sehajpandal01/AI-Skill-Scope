@@ -5,7 +5,6 @@ import torch
 import tensorflow as tf
 classifier = pipeline("sentiment-analysis")
 print("Transformers result:", classifier("AI is revolutionizing the world!"))
-
 iris = load_iris()
 X, y = iris.data, iris.target
 clf = LogisticRegression(max_iter=200)
