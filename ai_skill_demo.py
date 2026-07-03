@@ -14,3 +14,4 @@ x = torch.tensor([1.0, 2.0, 3.0])
 print("PyTorch tensor:", x * 2)
 print("TensorFlow constant:", tf.constant([[42.0]]))
  
+ 
