@@ -8,3 +8,5 @@ def extract_text_from_image(image_path):
     except Exception as e:
         return f"Error processing image: {e}"
 
+
+
