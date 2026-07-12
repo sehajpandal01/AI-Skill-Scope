@@ -11,3 +11,4 @@ def ask_question_about_text(text, question, key):
         return response.choices[0].message.content.strip()
     except Exception as e:
         return f"Error during Q&A: {e}"
+
