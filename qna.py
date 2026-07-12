@@ -1,6 +1,6 @@
 from openai import OpenAI
 def ask_question_about_text(text, question, key):
-    client = OpenAI(key=api_key)
+    client = OpenAI(key=key)
     prompt = f"The following text was extracted from an image:\n{text}\n\nNow answer this question about it:\n{question}"
     try:
         response = client.chat.completions.create(
