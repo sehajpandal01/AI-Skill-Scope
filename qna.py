@@ -1,5 +1,5 @@
 from openai import OpenAI
-def ask_question_about_text(text, question, api_key):
+def ask_question_about_text(text, question, key):
     client = OpenAI(api_key=api_key)
     prompt = f"The following text was extracted from an image:\n{text}\n\nNow answer this question about it:\n{question}"
     try:
