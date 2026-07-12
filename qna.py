@@ -12,3 +12,4 @@ def ask_question_about_text(text, question, key):
     except Exception as e:
         return f"Error during Q&A: {e}"
 
+
