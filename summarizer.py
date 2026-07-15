@@ -12,3 +12,4 @@ def summarize_text(text, api_key):
     except Exception as e:
         return f"Error during summarization: {e}"
  
+ 
