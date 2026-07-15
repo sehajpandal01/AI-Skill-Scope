@@ -11,3 +11,4 @@ def summarize_text(text, api_key):
         return response.choices[0].message.content.strip()
     except Exception as e:
         return f"Error during summarization: {e}"
+ 
